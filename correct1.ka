@@ -1,0 +1,58 @@
+const s = "Hello! This is the first correct test\n": str;
+const s1= "Give me a number between 1 - 10\n": str ;
+const s2= "Try again with a valid number 1-10\n":str;
+const s3= "\n":str;
+const s4= "This is the first array:\n":str;
+const s5= "This is the second array:\n":str;
+
+def printArray(n:integer,arrayy[]:integer):
+
+for i in [0:n-1]:
+	writeInteger(arrayy[i]);
+	writeStr(s3);
+endfor;
+enddef;
+
+def printArray2(n:integer,a[]:integer):
+half := [ x + 10 for x: integer in a of 100] : integer;
+
+for i in [0:n-1]:
+	writeInteger(half[i]);
+	writeStr(s3);
+endfor;
+
+enddef;
+
+def main():
+n: integer;
+
+mybool: boolean;
+
+mybool = true;
+
+writeStr(s);
+
+writeStr(s1);
+
+while(mybool):
+
+readInteger(n);
+
+if(n >= 1 and n<=10):
+
+	a := [i for i:n]:integer;
+	mybool = false;
+	writeStr(s4);
+	printArray(n,a);
+	writeStr(s5);
+	printArray2(n,a);
+else:
+	mybool = true;
+	writeStr(s2);
+endif;
+endwhile;
+
+return 0;
+
+enddef;
+

@@ -1,0 +1,20 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
+
+# Build outputs / binaries
+mylexer
+mycompiler
+*.o
+*.out
+
+# Flex/Bison generated files
+lex.yy.c
+*.tab.c
+*.tab.h
+*.output
+
+# Temporary files
+*~
