@@ -1,6 +1,6 @@
 # Kappa → C Transpiler (Flex/Bison)
 
-University project for **PΛH 402 – Theory of Computation (Spring 2023)** focused on the first stages of compilation:
+University project for **PΛH 402 – Theory of Computation focused on the first stages of compilation:
 **lexical analysis** and **syntax analysis**, for the fictional language **Kappa**.
 
 The compiler is implemented as a **source-to-source compiler (transpiler)**:
